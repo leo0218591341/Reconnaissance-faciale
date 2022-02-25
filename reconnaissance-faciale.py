@@ -68,9 +68,9 @@ progress += 1 / progress_step
 progress_bar.progress(progress)
 
 # Description
-if st.checkbox('Show description'):
+with st.expander("Description"):
     st.subheader('Description')
-    st.text(dataset.DESCR)
+    st.markdown(dataset.DESCR)
 
 
 ## Data split
